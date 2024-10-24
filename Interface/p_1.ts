@@ -20,3 +20,25 @@ const book: AubioBook = {
 }
 
 console.log(book);
+
+
+type ID = number | string;
+
+function userId(id: ID){
+  if(typeof id === "string"){
+    
+    console.log(id.toUpperCase());
+  }
+  else{
+    console.log(id);
+  }
+}
+
+userId(1);
+
+
+function getFirstThree(x: string | number[]){
+    console.log(x.slice(0,3));
+}
+
+getFirstThree('number');
